@@ -7,7 +7,6 @@ class Weather extends Component {
         {this.props.city &&
           this.props.country && (
             <p>
-              {" "}
               Location: {this.props.city}, {this.props.country}
             </p>
           )}
