@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "./App.css";
 
+import Nav from "./components/nav";
+import Main from "./components/main";
 import Title from "./components/title";
 import Form from "./components/form";
 import Weather from "./components/weather";
@@ -55,6 +57,8 @@ class App extends Component {
   render() {
     return (
       <div>
+        <Nav />
+        <Main />
         <Title />
         <Form getWeather={this.getWeather} />
         <Weather
