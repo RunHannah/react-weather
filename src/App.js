@@ -59,8 +59,8 @@ class App extends Component {
       <div>
         <Nav />
         <Main />
-        <Title />
         <Form getWeather={this.getWeather} />
+        <Title />
         <Weather
           temperature={this.state.temperature}
           city={this.state.city}

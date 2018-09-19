@@ -1,0 +1,15 @@
+/*********** TITLE  ***********/
+
+.title {
+  text-align: center;
+  color: #d26c22;
+  font-size: 30px;
+  font-family: Oswald, sans-serif;
+  margin-bottom: 15px;
+}
+
+/*********** FORM  ***********/
+
+.form {
+  text-align: center;
+}
