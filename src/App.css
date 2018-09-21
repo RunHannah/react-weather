@@ -12,6 +12,11 @@ html {
   /* color: var(--dark); */
 }
 
+.wrapper {
+  display: grid;
+  grid-gap: 20px;
+}
+
 /*********** NAVIGATION  ***********/
 
 .main-nav {
@@ -26,7 +31,6 @@ html {
 .main-nav a {
   display: block;
   text-decoration: none;
-  color: white;
 }
 
 .logo-nav {
@@ -36,17 +40,24 @@ html {
   font-size: 1.5em;
 }
 
-.logo-nav img {
-  width: 240px;
+.logo-nav i,
+a {
   height: 30px;
+  color: #d26c22;
 }
 
 .sub-nav {
   display: grid;
   grid-gap: 10px;
   list-style: none;
-  padding: 0;
+  text-align: center;
   grid-template-columns: repeat(8, 1fr);
+}
+
+.sub-nav a {
+  padding: 1.5px;
+  font-size: 1em;
+  color: white;
 }
 
 .sub-nav a:hover {
