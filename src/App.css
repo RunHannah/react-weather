@@ -1,20 +1,5 @@
-/* CSS Variables */
-/* :root {
-  --primary: #ddd;
-  --dark: #333;
-  --light: #fff;
-  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
-} */
-
 html {
-  /* box-sizing: border-box; */
   font-family: Oswald, sans-serif;
-  /* color: var(--dark); */
-}
-
-.wrapper {
-  display: grid;
-  grid-gap: 20px;
 }
 
 /*********** NAVIGATION  ***********/
@@ -64,13 +49,40 @@ a {
   background: #d26c22;
 }
 
+/*********** MAIN  ***********/
+
+.main {
+  position: relative;
+  height: 40vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-image: url("../src/assets/los-angeles.jpg");
+
+  /* For text formatting */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.main-font {
+  font-size: 2.1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.main-subfont {
+  font-size: 1.1rem;
+  text-align: center;
+  font-weight: bold;
+}
+
 /*********** TITLE  ***********/
 
 .title {
   text-align: center;
   color: #d26c22;
   font-size: 30px;
-  font-family: Oswald, sans-serif;
   margin-bottom: 15px;
 }
 
@@ -78,4 +90,5 @@ a {
 
 .form {
   text-align: center;
+  margin: 40px;
 }
