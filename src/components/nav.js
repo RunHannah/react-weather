@@ -1,11 +1,18 @@
 import React from "react";
 
 const Nav = () => (
-  <nav className="navbar">
-    <a href="#" id="logo">
-      OpenWeatherMap
-    </a>
-    <ul id="main-nav">
+  <nav className="main-nav">
+    <div className="logo-nav">
+      <li>
+        <i class="fas fa-sun" />
+      </li>
+      <li>
+        <a href="#" id="logo">
+          OpenWeatherMap
+        </a>
+      </li>
+    </div>
+    <div className="sub-nav">
       <li>
         <a href="#" className="nav-links">
           Weather
@@ -46,7 +53,7 @@ const Nav = () => (
           Blog
         </a>
       </li>
-    </ul>
+    </div>
   </nav>
 );
 

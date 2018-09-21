@@ -1,3 +1,58 @@
+/* CSS Variables */
+/* :root {
+  --primary: #ddd;
+  --dark: #333;
+  --light: #fff;
+  --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+} */
+
+html {
+  /* box-sizing: border-box; */
+  font-family: Oswald, sans-serif;
+  /* color: var(--dark); */
+}
+
+/*********** NAVIGATION  ***********/
+
+.main-nav {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  background-color: #4e4d4a;
+  align-items: center;
+  height: 90px;
+}
+
+.main-nav a {
+  display: block;
+  text-decoration: none;
+  color: white;
+}
+
+.logo-nav {
+  display: flex;
+  width: 250px;
+  justify-content: space-around;
+  font-size: 1.5em;
+}
+
+.logo-nav img {
+  width: 240px;
+  height: 30px;
+}
+
+.sub-nav {
+  display: grid;
+  grid-gap: 10px;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.sub-nav a:hover {
+  background: #d26c22;
+}
+
 /*********** TITLE  ***********/
 
 .title {
