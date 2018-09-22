@@ -57,7 +57,8 @@ a {
 .main {
   position: relative;
   height: 40vh;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-image: url("../src/assets/los-angeles.jpg");
   opacity: 0.8;
@@ -67,19 +68,17 @@ a {
   align-items: center;
   justify-content: center;
   color: white;
+  text-align: center;
+  font-family: "Arial Narrow";
 }
 
 .main-font {
-  font-family: "Arial Narrow";
   font-size: 2.1rem;
-  text-align: center;
   margin-bottom: -10px;
 }
 
 .main-subfont {
-  font-family: "Arial Narrow";
   font-size: 1.1rem;
-  text-align: center;
 }
 
 .main p:hover {
@@ -138,5 +137,42 @@ button {
   text-align: center;
   color: grey;
   font-family: Oswald, sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
+}
+
+/*********** MEDIA QUERIES  ***********/
+
+@media (max-width: 768px) {
+  .sub-nav li {
+    float: left;
+  }
+  .sub-nav li a {
+    /* padding: 20px 30px; */
+    clear: none;
+    float: right;
+    max-height: none;
+    display: none;
+  }
+
+  .main {
+    background-size: 120%;
+    background-position: center;
+  }
+
+  .main-font {
+    font-size: 1.8rem;
+  }
+
+  .main-subfont {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 690px) {
+  .main {
+    background-size: 140%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
