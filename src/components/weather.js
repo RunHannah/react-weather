@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class Weather extends Component {
   render() {
     return (
-      <div>
+      <div className="weather">
         {this.props.city &&
           this.props.country && (
             <p>
@@ -15,12 +15,12 @@ class Weather extends Component {
           )}
         {this.props.temperature && (
           <p>
-            Temperature: <span>{this.props.temperature}</span>
+            Temperature: <span>{this.props.temperature} &deg;F</span>
           </p>
         )}
         {this.props.humidity && (
           <p>
-            Humidity: <span>{this.props.humidity}</span>
+            Humidity: <span>{this.props.humidity} %</span>
           </p>
         )}
         {this.props.description && (

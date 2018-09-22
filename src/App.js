@@ -34,7 +34,7 @@ class App extends Component {
 
     if (city && country) {
       this.setState({
-        temperature: data.main.temp,
+        temperature: Math.round(data.main.temp),
         city: data.name,
         country: data.sys.country,
         humidity: data.main.humidity,
@@ -56,7 +56,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="wrapper">
+      <div>
         <Nav />
         <Main />
         <Form getWeather={this.getWeather} />
