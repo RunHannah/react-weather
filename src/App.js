@@ -14,6 +14,8 @@ class App extends Component {
     country: undefined,
     humidity: undefined,
     description: undefined,
+    sunrise: undefined,
+    sunset: undefined,
     error: undefined
   };
 
@@ -33,12 +35,17 @@ class App extends Component {
     const data = await api_call.json();
 
     if (city && country) {
+      let timeSunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
+      let timeSunset = new Date(data.sys.sunset * 1000).toLocaleTimeString();
+
       this.setState({
         temperature: Math.round(data.main.temp),
         city: data.name,
         country: data.sys.country,
         humidity: data.main.humidity,
         description: data.weather[0].description,
+        sunrise: timeSunrise,
+        sunset: timeSunset,
         error: ""
       });
     } else {
@@ -48,6 +55,8 @@ class App extends Component {
         country: undefined,
         humidity: undefined,
         description: undefined,
+        sunrise: undefined,
+        sunset: undefined,
         error: "Please enter a valid value"
       });
     }
@@ -67,6 +76,8 @@ class App extends Component {
           country={this.state.country}
           humidity={this.state.humidity}
           description={this.state.description}
+          sunrise={this.state.sunrise}
+          sunset={this.state.sunset}
           error={this.state.error}
         />
       </div>

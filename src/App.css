@@ -28,6 +28,10 @@ a {
   color: #d26c22;
 }
 
+.logo-nav a {
+  pointer-events: none;
+}
+
 .sub-nav {
   display: grid;
   font-family: "Arial Narrow";
@@ -78,6 +82,10 @@ a {
   text-align: center;
 }
 
+.main p:hover {
+  cursor: default;
+}
+
 /*********** TITLE  ***********/
 
 .title {
@@ -86,7 +94,10 @@ a {
   text-align: center;
   color: #d26c22;
   font-size: 2rem;
-  margin-bottom: 15px;
+}
+
+.title p:hover {
+  cursor: default;
 }
 
 /*********** FORM  ***********/
@@ -94,7 +105,7 @@ a {
 .form {
   font-family: "Arial Narrow";
   text-align: center;
-  margin: 40px;
+  margin: 30px;
 }
 
 input {

@@ -18,14 +18,24 @@ class Weather extends Component {
             Temperature: <span>{this.props.temperature} &deg;F</span>
           </p>
         )}
-        {this.props.humidity && (
-          <p>
-            Humidity: <span>{this.props.humidity} %</span>
-          </p>
-        )}
         {this.props.description && (
           <p>
             Conditions: <span>{this.props.description}</span>
+          </p>
+        )}
+        {this.props.sunrise && (
+          <p>
+            Sunrise: <span>{this.props.sunrise}</span>
+          </p>
+        )}
+        {this.props.sunset && (
+          <p>
+            Sunset: <span>{this.props.sunset}</span>
+          </p>
+        )}
+        {this.props.humidity && (
+          <p>
+            Humidity: <span>{this.props.humidity} %</span>
           </p>
         )}
         {this.props.error && <p>{this.props.error}</p>}
