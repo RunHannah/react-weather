@@ -38,7 +38,11 @@ a {
   grid-gap: 10px;
   list-style: none;
   text-align: center;
-  grid-template-columns: repeat(8, 1fr);
+  display: flex;
+}
+
+.sub-nav li {
+  margin-left: 20px;
 }
 
 .sub-nav a {
@@ -160,19 +164,34 @@ button {
   }
 
   .main-font {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .main-subfont {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
+
+  .title {
+    font-size: 1.9rem;
+  }
+
 }
 
 @media (max-width: 690px) {
+
   .main {
     background-size: 140%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
+
+  .main-font {
+    font-size: 1.6rem;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
 }
