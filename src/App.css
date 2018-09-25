@@ -147,16 +147,25 @@ button {
 /*********** MEDIA QUERIES  ***********/
 
 @media (max-width: 768px) {
+  .sub-nav {
+    flex-wrap: wrap;
+  }
+
   .sub-nav li {
     float: left;
   }
-  .sub-nav li a {
-    /* padding: 20px 30px; */
+
+  .subnav > li {
+    flex: 1 2 100%;
+  }
+
+  /* To remove subnav links  */
+  /* .sub-nav li a {
     clear: none;
     float: right;
     max-height: none;
     display: none;
-  }
+  } */
 
   .main {
     background-size: 120%;
@@ -174,11 +183,9 @@ button {
   .title {
     font-size: 1.9rem;
   }
-
 }
 
 @media (max-width: 690px) {
-
   .main {
     background-size: 140%;
     background-size: cover;
@@ -193,5 +200,4 @@ button {
   .title {
     font-size: 1.6rem;
   }
-
 }

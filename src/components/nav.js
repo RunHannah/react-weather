@@ -4,54 +4,36 @@ const Nav = () => (
   <nav className="main-nav">
     <div className="logo-nav">
       <li>
-        <i class="fas fa-sun" />
+        <i className="fas fa-sun" />
       </li>
       <li>
-        <a href="#" id="logo">
-          OpenWeatherMap
-        </a>
+        <a id="logo">OpenWeatherMap</a>
       </li>
     </div>
     <div className="sub-nav">
       <li>
-        <a href="#" className="nav-links">
-          Weather
-        </a>
+        <a className="nav-links">Weather</a>
       </li>
       <li>
-        <a href="#" className="nav-links">
-          Maps
-        </a>
+        <a className="nav-links">Maps</a>
       </li>
       <li>
-        <a href="#" className="nav-links">
-          API
-        </a>
+        <a className="nav-links">API</a>
       </li>
       <li>
-        <a href="#" className="nav-links">
-          Price
-        </a>
+        <a className="nav-links">Price</a>
       </li>
       <li>
-        <a href="#" className="nav-links">
-          Partners
-        </a>
+        <a className="nav-links">Partners</a>
       </li>
       <li>
-        <a href="#" className="nav-links">
-          Stations
-        </a>
+        <a className="nav-links">Stations</a>
       </li>
       <li>
-        <a href="#" className="nav-links">
-          Widgets
-        </a>
+        <a className="nav-links">Widgets</a>
       </li>
       <li>
-        <a href="#" className="nav-links">
-          Blog
-        </a>
+        <a className="nav-links">Blog</a>
       </li>
     </div>
   </nav>
