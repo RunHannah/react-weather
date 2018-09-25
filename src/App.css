@@ -33,7 +33,6 @@ a {
 }
 
 .sub-nav {
-  display: grid;
   font-family: "Arial Narrow";
   grid-gap: 10px;
   list-style: none;
@@ -147,7 +146,12 @@ button {
 /*********** MEDIA QUERIES  ***********/
 
 @media (max-width: 768px) {
+  .main-nav {
+    padding: 0px 20px;
+  }
+
   .sub-nav {
+    display: flex;
     flex-wrap: wrap;
   }
 
@@ -186,6 +190,10 @@ button {
 }
 
 @media (max-width: 690px) {
+  .main-nav {
+    height: 100px;
+  }
+
   .main {
     background-size: 140%;
     background-size: cover;
@@ -199,5 +207,10 @@ button {
 
   .title {
     font-size: 1.6rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
   }
 }
