@@ -17,7 +17,6 @@ class CurrentWeather extends Component {
       <div className="weather">
         {city && country && (
           <p>
-            <p className="title">Current weather in your city</p>
             Location:{' '}
             <span>
               {city}, {country}

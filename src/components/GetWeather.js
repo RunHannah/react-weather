@@ -27,9 +27,13 @@ export class GetWeather extends Component {
         process.env.REACT_APP_WEATHER_API_KEY +
         `&units=imperial`
     );
+
     const data = await api_call.json();
 
-    if (city && country) {
+    if (data.cod === '404') {
+      return this.setState({ error: 'Please enter a valid city and country.' });
+    }
+    if (data.cod === 200) {
       let timeSunrise = new Date(data.sys.sunrise * 1000).toLocaleTimeString();
       let timeSunset = new Date(data.sys.sunset * 1000).toLocaleTimeString();
 
@@ -52,7 +56,7 @@ export class GetWeather extends Component {
         description: '',
         sunrise: '',
         sunset: '',
-        error: 'Please enter a valid value'
+        error: 'Please enter a valid city and country'
       });
     }
   };
